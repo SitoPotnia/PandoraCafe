@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Misteriozna Ulica 1, Rijeka</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">cafe bar<br>Pandora</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="program.html" class="w3-button w3-block w3-black">PROGRAM</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="galerija.html" class="w3-button w3-block w3-black">GALERIJA</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="kontakt.html" class="w3-button w3-block w3-black">KONTAKT</a>
+      </div>
+    </div>
+  </div>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content fixed-text-container" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">O NAMA</span></h5>
+      <p>Naš jedinstveni i enigmatični cafe bar nastao je 20xx. godine iz zajednice znatiželjnih kreativaca "Pandora". Ujedinjeni zajedničkim ciljem razbijanja monotonije rutinskog života, osnovali smo ovaj prostor kako bi vam ponudili nešto što nijedan drugi lokal nije do sad. Očekujte neočekivano od naših programa, jer svaki tjedan Pandora otvara novu kutiju i dočekujemo vas s novim društvenim eksperimentom.</p>
+      <div class="w3-panel w3-leftbar ">
+        <p><i>"Prava metoda znanja je eksperiment".</i></p>
+        <p>William Blake</p>
+      </div>
+      <img src="/static/bar.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+      
+    </div>
+  </div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENI</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Jela</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Pića</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Jaja sa slaninom</h5>
+      <p class="w3-text-grey">3 jaja, slanina, rajčica, vrhnje, kruh <b>$5,00</b></p><br>
+    
+      <h5>Pandorina salata</h5>
+      <p class="w3-text-grey">Zelena salata, svježi krastavci, rajčica, piletina, sir, krutoni, dressing <b>$7,20</b>
+      </p><br>
+    
+      <h5>Tortilla piletina</h5>
+      <p class="w3-text-grey">Piletina, tikvice, paprika, gljive, ljubičasti grah, kukuruz, vrhnje, rajčica, zelena salata, svježi krastavci + bijeli umak <b>$6,70</b></p><br>
+    
+      <h5>Pohane gljive</h5>
+      <p class="w3-text-grey">Pohane gljive, gucamole, rajčica, zelena sala <b>$3,80</b></p><br>
+    
+      <h5>Risotto povrće</h5>
+      <p class="w3-text-grey">Tikvice, paprika, gljive, vrhnje <b>$6,70</b></p>
+      <h5>Tematsko jelo</h5>
+      <p class="w3-text-grey">???</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Espresso</h5>
+      <p class="w3-text-grey"><b>$2.50</b></p><br>
+    
+      <h5>Pelin</h5>
+      <p class="w3-text-grey"><b>$4,50</b></p><br>
+    
+      <h5>Rakija</h5>
+      <p class="w3-text-grey"><b>$5,00</b></p><br>
+    
+      <h5>Mocca čaj</h5>
+      <p class="w3-text-grey"><b>$5,00</b></p><br>
+    
+      <h5>Tematsko piće</h5>
+      <p class="w3-text-grey"><b>???</b></p>
+    </div>  
+    <img src="./static/coffee.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NAĐITE NAS</span></h5>
+    <p>Upijajte ovaj jedinstveni pogled na Rijeku samo sa terase našeg lokala.</p>
+    <img src="./static/map.jpeg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Znatiželjni?</span>Potpišite se na naš newsletter da bi ostali u toku s našim programom.</p>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><button class="w3-button w3-black" type="submit">POŠALJI</button></p>
+    <p><strong>Rezervacija</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Ime*" required name="Ime"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Broj ljudi*" required name="Ljudi"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Datum i vrijeme" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Ostavite poruku" name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">POŠALJI</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>

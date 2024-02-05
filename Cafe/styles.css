@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./static/cafe.jpeg");
+    min-height: 75%;
+  }
+  #kontakt {
+    background-image: url("./static/kontakt.jpeg")
+    ;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .fixed-text-container {
+    position: relative;
+  }
+
+  .fixed-text-container.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Change the background color as needed */
+    z-index: 1000; /* Adjust the z-index to make sure it appears above other elements */
+  }
